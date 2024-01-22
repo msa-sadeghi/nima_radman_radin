@@ -9,3 +9,5 @@ TILE_SIZE = 32
 DIRT_IMG = pygame.image.load("assets/dirt.png")
 GRASS_IMG = pygame.image.load("assets/grass.png")
 WATER_IMG = pygame.image.load("assets/water.png")
+EXIT_IMG = pygame.image.load("assets/img/exit_door.png")
+RESTART_IMG = pygame.image.load("assets/img/restart_btn.png")
