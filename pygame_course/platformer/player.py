@@ -27,6 +27,7 @@ class Player(Sprite):
         self.image = pygame.transform.scale(image, (image.get_width() * 0.2, image.get_height() * 0.2))
         self.rect = self.image.get_rect()
         self.rect.topleft = (x,y)
+        self.jump_sound = pygame.mixer.Sound("assets/img/jump.wav")
 
         self.dead_image = pygame.image.load("assets/img/ghost.png")
         self.reset(x,y)
@@ -41,12 +42,14 @@ class Player(Sprite):
         self.idle = True
         self.in_air = False
         self.game_status = "PLAYING"
-    def update(self, tile_list, enemy_group):
+    def update(self, tile_list, enemy_group, exit_group):
         if self.game_status == "PLAYING":
             self.move(tile_list)
             self.animation()
             if pygame.sprite.spritecollide(self, enemy_group, False):
                 self.game_status = "GAMEOVER"
+            if pygame.sprite.spritecollide(self, exit_group, False):
+                self.game_status = "NEXTLEVEL"
         elif self.game_status == "GAMEOVER":
             self.image = self.dead_image
             if self.rect.top >= 200:
@@ -81,6 +84,7 @@ class Player(Sprite):
             self.idle = True
 
         if keys[pygame.K_SPACE] and not self.jumped and not self.in_air:
+            self.jump_sound.play()
             self.vely = -15
             self.jumped = True
 
