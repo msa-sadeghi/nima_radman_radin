@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      section#w [class*="text"] {
+        box-shadow: 2px 2px 2px #000;
+        color: red;
+      }
+      body :first-child {
+        width: 300px;
+        height: 150px;
+        object-fit: cover;
+      }
+      #w {
+        width: 400px;
+        height: 200px;
+        object-fit: scale-down;
+      }
+    </style>
+  </head>
+  <body>
+    <img class="" src="./car.jpg" alt="" />
+    <img src="./google.png" alt="" />
+    <img id="w" src="./car.jpg" alt="" />
+  </body>
+</html>

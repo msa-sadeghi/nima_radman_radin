@@ -1,0 +1,16 @@
+:root {
+    --primiray-color: green;
+    --secondary-color: blue;
+  }
+  .first {
+    color: var(--primiray-color);
+  }
+  .second {
+    color: var(--secondary-color);
+  }
+  .third {
+    color: var(--primiray-color);
+  }
+  .forth {
+    color: var(--primiray-color);
+  }
