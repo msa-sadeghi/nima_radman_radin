@@ -1,0 +1,31 @@
+ul.menu li{
+    display: inline;
+    padding: 10px;
+    line-height: 70px;
+    font-family: vazir-bold;
+}
+
+body{
+    font-family: vazir;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(./Vazirmatn-Light.woff2);
+}
+@font-face {
+    font-family: vazir-bold;
+    src: url(./Vazirmatn-Bold.woff2);
+}
+
+.card{
+    border: 1px solid red;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.card-header{
+    border-bottom: 1px dashed red;
+    padding-bottom: 10px;
+
+}
