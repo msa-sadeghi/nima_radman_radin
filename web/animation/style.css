@@ -1,0 +1,83 @@
+/* .transform{
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    position: fixed;
+    
+}
+.transform:hover{
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%) rotate(40deg) scale(2,1) skew(40deg);
+} */
+/* .parent{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: fixed;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    perspective:200px
+}
+.child{
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%) rotateX(45deg);
+    width: 50px;
+    height: 80px;
+    background-color: red;
+} */
+
+/* .test1{
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    margin-bottom: 20px;
+    backface-visibility: visible;
+    
+}
+
+.test1:hover,.test2:hover{
+    transform: rotateY(180deg);
+}
+
+
+.test2{
+    width: 100px;
+    height: 100px;
+    background-color: yellowgreen;
+    backface-visibility: hidden;
+} */
+
+.test3{
+    display: inline-block;
+    margin-right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen; 
+    border-bottom: 2px solid transparent; 
+    transition-property: all;
+    transition-duration: 1s; 
+    transition-delay: 1s;
+    position: relative;
+    top: 0;
+    
+}
+
+.test3:hover{
+    top: 10px;
+    background-color: green;
+    border-bottom: 2px solid red;
+}
+.test4{
+    transition-property: all;
+    transition-duration: 1s; 
+    transition-delay: 1s;
+    transition-timing-function: cubic-bezier(0, 0, 0.61,-0.16);
+    transform: scale(1);
+}
+.test4:hover{
+    transform: scale(2);
+}
