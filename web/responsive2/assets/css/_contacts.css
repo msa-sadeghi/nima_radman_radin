@@ -1,0 +1,41 @@
+.container-fluid-custom{
+    background-color: rgb(1, 1, 126);
+    color: #fff;
+    
+}
+
+.container-fluid-custom .contacts{
+    font-size: 15px;
+}
+.container-fluid-custom .contacts i{
+    color:orange;
+    padding: 20px;
+}
+.container-fluid-custom .contacts i span{
+    color: #fff;
+    padding-left: 5px;
+}
+.container-fluid-custom .socialmedia{
+    direction: ltr;
+}
+.container-fluid-custom .socialmedia i{
+    padding: 20px;
+    
+}
+.container-fluid-custom .socialmedia a{
+    color:#fff;
+}
+.container-fluid-custom .socialmedia i:hover{
+background-color: orange;
+}
+
+@media screen and (max-width:950px){
+   .container-fluid-custom .hidden{
+        display: none;
+    }
+}
+@media screen and (max-width:600px) {
+    .container-fluid-custom .hidden {
+        display: none;
+    }
+}

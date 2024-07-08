@@ -1,0 +1,36 @@
+nav{
+    background-color: #efefef;
+    height: 40px;
+}
+nav a{
+    float: right;
+    font-family: vazir;
+    color:rgb(46,46,46);
+    padding-left: 16px;
+    padding-right: 16px;
+    font-size: 18px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s ease;
+    text-align: center;
+    vertical-align: -10px;
+}
+nav a i {
+    vertical-align: -5px;
+}
+nav a:hover{
+    border-bottom: 2px solid red;
+}
+
+
+nav a.icon{display: none;}
+
+@media screen and (max-width:600px) {
+    nav a:not(:first-child){
+        display: none;
+    }
+    nav a.icon {
+        display: block;
+        float: left;
+    }
+    
+}

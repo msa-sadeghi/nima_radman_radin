@@ -1,0 +1,17 @@
+@import url(./_contacts.css);
+@import url(./_nav.css);
+body{
+    font-family: vazir;
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(../font/Vazirmatn-Light.woff2);
+}
+@font-face {
+    font-family: vazir-bold;
+    src: url(../font/Vazirmatn-Bold.woff2);
+}
+
+
+
